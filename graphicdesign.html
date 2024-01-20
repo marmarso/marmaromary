@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Marmar Omary - Graphic Design</title>
+    </head>
+
+    <body>
+<!----------------------------NAV-------------------------------->
+        <nav class="navbar">
+            <div class="navbar-links">
+            <ul>
+                <li><a href="webdesign.html">Web</li></a>
+                <li><a href="graphicdesign.html">Graphic</li></a>
+                <li><a href="index.html">Marmar Omary</li></a>
+                <li><a href="resume.html">Resume</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+<!------------------------HEADER-------------------------------->
+        <header class="header">
+            <h2>Digital and print designs I've made</h2>
+        </header>
+
+<!------------------------MAIN---------------------------------->
+
+        <section class="graphic-main">
+            <!--LINE 1-->
+            <section class="graphic-main1">
+                <!--1-->
+                <section class="graphic-img">
+                    <a href="weddingcard.html">
+                        <img src="images/graphic/wedding-card/wedding-card.png" alt="Image of wedding card which leads to a page with more details on project">
+                    </a>
+                    <h3>Wedding Card</h3>
+                </section>
+                <!--2-->
+                <section class="graphic-img">
+                    <a href="babyshower.html">
+                        <img src="images/graphic/baby-shower/baby-shower-mockup copy.png" alt="Image of baby shower card which leads to a page with more details">
+                    </a>
+                    <h3>Baby Shower Invite</h3>
+                </section>
+                <!--3-->
+                <section class="graphic-img">
+                    <a href="exelpainting.html">
+                        <img src="images/graphic/exel/exel-poster.png" alt="Image of Exel Painting poster which leads to a page with more designs and details about project">
+                    </a>
+                    <h3>Exel Painting</h3>
+                </section>
+
+            </section>
+            <!--LINE 2-->
+            <section class="graphic-main2">
+                <!--1-->
+                <section class="graphic-img">
+                    <a href="wellbefore.html">
+                        <img src="images/graphic/well-before/well-before-mockup copy.png" alt="Image of Exel Painting poster which leads to a page with more designs and details about project">
+                    </a>
+                    <h3>Well Before</h3>
+                </section>
+                <!--2-->
+                <section class="graphic-img">
+                    <a href="tmustore.html">
+                        <img src="images/graphic/tmu-store/black-friday-flyers copy.jpg" alt="Image of Exel Painting poster which leads to a page with more designs and details about project">
+                    </a>
+                    <h3>Toronto Metropolitan University Book Store</h3>
+                </section>
+                <!--3-->
+                <section class="graphic-img">
+                    <a href="tmugcm.html">
+                        <img src="images/graphic/tmu-gcm/award-card-front copy.jpg" alt="Image of Exel Painting poster which leads to a page with more designs and details about project">
+                    </a>
+                    <h3>Toronto Metropolitan University: Graphic Communications Management</h3>
+                </section>
+            </section>
+
+        </section>
+
+
+
+
+<!---------------------FOOTER------------------------------->
+        <footer>
+            <h2>reach me at: marmaromary@gmail.com</h2>
+        </footer>
+
+<!--------------------JAVASCRIPT---------------------------->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarLinks.classList.toggle("active");
+            })
+
+        </script>
+
+    </body>
+</html>

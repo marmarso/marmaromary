@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Marmar Omary - Baby Shower</title>
+
+        <style>
+
+            .baby-shower{
+                background-color: #255f2fba;
+                padding: 60px 30px;
+            }
+
+            .baby-shower-content{
+                margin-top: 50px;
+                flex-basis: 50%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .baby-shower-left img{
+                width: 100%;
+            }
+            
+            .baby-shower-right{
+                width: 100%;
+            }
+
+            .baby-shower-right h3{
+                color: white;
+                padding: 30px 20px;
+                line-height: 1.5;
+            }
+
+            .goback{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                border: 1px solid white;
+                padding: 5px 15px;
+            }
+
+            .goback:hover{
+                background-color: white;
+                color: #0f4218e2;
+            }
+            
+            @media only screen and (max-width: 960px) {
+                .baby-shower-content{flex-direction: column;}
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+<!----------------------------NAV-------------------------------->
+        <nav class="navbar">
+            <div class="navbar-links">
+            <ul>
+                <li><a href="webdesign.html">Web</li></a>
+                <li><a href="graphicdesign.html">Graphic</li></a>
+                <li><a href="index.html">Marmar Omary</li></a>
+                <li><a href="resume.html">Resume</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+<!------------------------HEADER-------------------------------->
+        <header class="header">
+            <h2>Baby Shower Card</h2>
+        </header>
+
+<!--------------------------MAIN-------------------------------->
+
+        <section class="baby-shower">
+            <h3><a href="graphicdesign.html" class="goback">GO BACK</a></h3>
+            <section class="baby-shower-content">
+                <section class="baby-shower-left">
+                    <img src="images/graphic/baby-shower/baby-shower-mockup copy.png">
+                </section>
+
+                <section class="baby-shower-right">
+                    <h3>Client: Baby Shower Host</h3>
+                    <h3>Request: A design with geometric shapes and lots of flowers. 
+                        Lots of colours but still looks cohesive. 
+                        New mother's favourite colour is green and she likes feminine designs.</h3>
+                    <h3>Project took approximately 1.5 weeks with 2 changes. 
+                    I decided to use green as the main colour and surround it with watercolour flowers. 
+                    Client was not a fan of minimalism but did not want it to look crowded or messy.
+                    The geometric shapes and the thin script font helped against the minimalist look while 
+                    keeping everything clean. I chose a a fun rounded font to give the design a soft feminine
+                    look and to contrast against the sharp geometric shapes. The flowers also have some soft
+                    edges to give the feminine feel. In order for the sharp shapes to not be out of place, I made 
+                    sure the font was a serif font and the flowers have sharp edges mixed with the soft ones. 
+                    Varying the sizes of the design elements and choosing colours with similar saturation let me 
+                    bring everything together with enough white space to make the design full but not crowded just as the client wanted.</h3>
+                </section>
+            </section>
+        </section>
+
+
+
+<!---------------------FOOTER------------------------------->
+        <footer>
+            <h2>reach me at: marmaromary@gmail.com</h2>
+        </footer>
+
+<!--------------------JAVASCRIPT---------------------------->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarLinks.classList.toggle("active");
+            })
+
+        </script>
+
+    </body>
+</html>

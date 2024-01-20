@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Marmar Omary - TMU Store</title>
+
+        <style>
+
+
+            .tmu{
+                background-color: #255f2fba;
+                padding: 60px 30px;
+            }
+
+            .tmu-img{
+                flex-basis: 50%;
+            }
+
+            .tmu-img h3{
+                margin-top: 30px;
+                color: white;
+                padding: 10px 10px;
+                line-height: 1.5;
+            }
+
+            .tmu-flyer , .tmu-tweet , .tmu-ad{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .tmu-flyer img , .tmu-tweet img , .tmu-ad img{
+                margin-top: 30px;
+                padding: 5px;
+                max-width: 100%;
+            }
+
+            .goback{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                border: 1px solid white;
+                padding: 5px 15px;
+                margin: 20px;
+            }
+
+            .goback:hover{
+                background-color: white;
+                color: #0f4218e2;
+            }
+
+            @media only screen and (max-width: 960px) {
+                .tmu-tweet , .tmu-flyer , .tmu-ad {flex-direction: column; align-items: center;}
+                .tmu-img{width: 90%;}
+            }
+
+        </style>
+    </head>
+
+    <body>
+<!----------------------------NAV-------------------------------->
+        <nav class="navbar">
+            <div class="navbar-links">
+            <ul>
+                <li><a href="webdesign.html">Web</li></a>
+                <li><a href="graphicdesign.html">Graphic</li></a>
+                <li><a href="index.html">Marmar Omary</li></a>
+                <li><a href="resume.html">Resume</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+<!------------------------HEADER-------------------------------->
+        <header class="header">
+            <h2>Toronto Metropolitan University Bookstore</h2>
+        </header>
+
+<!------------------------MAIN---------------------------------->
+
+        <section class="tmu">
+            <h3><a href="graphicdesign.html" class="goback">GO BACK</a></h3>
+
+            <!--LINE 1-->
+            <section class="tmu-flyer">
+                <!--1-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/black-friday-flyers copy.jpg">
+                </section>
+                <!--2-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/sale-flyer.png">
+                </section>
+                <!--3-->
+                <section class="tmu-img">
+                    <h3>Client: TMU Bookstore</h3>
+                    <h3>Request: 3 sales flyers with no images. Simple and easy to see from far. Needed ASAP</h3>
+                    <h3>Each flyer took about 1-2 hours with a few changes. I used eye catching colours 
+                        and big and bold font to grab attention and for it to be easy to read. I added
+                        different shapes and layouts to keep it interesting.</h3>
+                </section>
+            </section>
+            <!--LINE 2-->
+            <section class="tmu-tweet">
+                <!--1-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/degree-tweet.jpg">
+                </section>
+                <!--2-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/grad-tshirt-tweet.jpg">
+                </section>
+                <!--3-->
+                <section class="tmu-img">
+                    <h3>Request: 2 digital designs to be used for social media and website banner.
+                        Items to be used in the design were provided.</h3>
+                    <h3>I started with taking pictures of the frames and the shirts and edited them.
+                        I decided to keep with a simple design since that was what previous projects
+                        with the same client preferred. These designs were needed within 2 hours and 
+                        the client wanted efficiency, so I focused on everything being simple and straightforward.
+                    </h3>
+                </section>
+            </section>
+            <!--LINE 2-->
+            <section class="tmu-ad">
+                <!--1-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/eyeopener-ad.png">
+                </section>
+                <!--2-->
+                <section class="tmu-img">
+                    <img src="images/graphic/tmu-store/flyers.png">
+                </section>
+                <!--3-->
+                <section class="tmu-img">
+                    <h3>Request: 2 sale flyers with part of the sale items provided, the rest to be chosen
+                        by me. Sale prices provided. Mimic normal sale flyers with price
+                        being the most highlighted. Along with the 2 flyers, a new store hours ad to be printed and published
+                        in the TMU newspaper: The Eyeopener. Main focus was to be interesting but also focus the new hours.
+                        All were assigned together with different deadlines. </h3>
+                    <h3>I started with the November sale. I picked some items, got them approved and made a list of 
+                        the new sale prices. I photographed and edited them. I knew there was another sale in January
+                        so I decided to make the flyers similar so customers recognized the near monthly sales but still
+                        make each distinct so it was noticeable that it was a new flyer for a new sale. My process was the 
+                        same for both flyers. I decided on blue for all 3 projects to match the winter
+                        season. I decided to have the important elements stand out by having them on a white or light background.
+                        I used the complimentary colour to blue as the sale price colour to make them the focus. For the 
+                        store hours ad I decided to get a bit more creative to have the ad stand out against all other ads
+                        in the newspaper so I decided on making a winter landscape illustration and having the white sky as the
+                        backdrop for the information. Once done I proofed it and sent it off to the design and print department of
+                        The Eyeopener. All other flyers and ads were printed and published digitally by myself.
+                    </h3>
+                </section>
+            </section>
+
+        </section>
+
+
+
+
+<!---------------------FOOTER------------------------------->
+        <footer>
+            <h2>reach me at: marmaromary@gmail.com</h2>
+        </footer>
+
+<!--------------------JAVASCRIPT---------------------------->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarLinks.classList.toggle("active");
+            })
+
+        </script>
+
+    </body>
+</html>

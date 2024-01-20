@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+/* NAV */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#1c5838;
+}
+
+.navbar-links ul{
+    display: flex;
+}
+
+.navbar-links li{
+    padding: 15px;
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #E8C0B8;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: block;
+}
+
+nav a:hover{
+    color: #1c5838;
+    background-color: #E8C0B8;
+    
+}
+
+.hamburger{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger .bar{
+    width: 100%;
+    height: 3px;
+    background-color: #E981A4;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    
+}
+
+@media (max-width: 773px) {
+
+    .hamburger{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: 5px 10px;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+}
+
+
+/* HEADER */
+
+header{
+    padding: 10px;
+    margin: 30px;
+    position: relative;
+}
+
+header h1 , header h2{
+    color: #1c5838;
+    text-align: center;
+}
+
+header h1{
+    font-size: 50px;
+    
+}
+
+header h2{
+    font-size: 30px;
+}
+
+span{
+    color: #E981A4;
+    text-decoration: underline;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INDEX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.home-main{
+    display: flex;
+    justify-content: center;
+}
+.home-main img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 478px){
+    .home-main{flex-direction: column;}
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ WEB ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+.web-main{
+    background-color: #0c3b2e;
+    padding: 60px 10px;
+    border-bottom: solid #e6a902;
+    border-top: solid #e6a902;
+}
+
+.web-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.web-img{
+    flex-basis: 50%;
+}
+
+.web-main img{
+    padding: 5px;
+    max-width: 100%;
+}
+
+.web-img img:hover{
+    opacity: 70%;
+}
+
+.web-img h3{
+    color: #e6a902;
+    padding: 10px 10px;
+}
+
+.web-img p{
+    line-height: 1.5;
+    font-weight: 300;
+    color: white;
+    padding: 0 10px 20px 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .web-content{flex-direction: column;}
+    .web-img{width: 100%;}
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRAPHIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.graphic-main{
+    background-color: #0c3b2e;
+    padding: 60px 0;
+    border-bottom: solid #e6a902;
+    border-top: solid #e6a902;
+}
+
+.graphic-img{
+    max-width: 400px;
+    flex-basis: 50%;
+}
+
+.graphic-img h3{
+    color: #e6a902;
+    padding: 10px 10px;
+}
+
+.graphic-main1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.graphic-main1 img{
+    padding: 5px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.graphic-main1 img:hover{
+    opacity: 80%;
+}
+
+.graphic-main2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.graphic-main2 img{
+    margin-top: 30px;
+    padding: 5px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.graphic-main2 img:hover{
+    opacity: 80%;
+}
+
+
+@media only screen and (max-width: 475px){
+    .graphic-main1 , .graphic-main2{flex-direction: column; align-items: center;}
+    .graphic-main h3{padding: 20px 5px; }
+    .graphic-main2 img{margin: 0;}
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESUME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+.resume{
+    margin: 20px 0;
+    padding: 40px 60px;
+    background-color: #255f2fba;
+
+}
+
+.resume h2{
+    color: #0c3b2e;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: solid white;
+}
+
+.resume h3{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.resume h4{
+    color: #febfb3;
+}
+
+.resume ul{
+    padding: 10px 0;
+}
+
+.resume ul li{
+    padding: 10px;
+    color: white;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+.contact{
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/contact-thankyou/allison-saeng-eZ8fkqYTWIM-unsplash.jpg");
+}
+
+.contact-content{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-evenly;
+}
+
+.contact h2{
+    text-align: center;
+    color: #1c5838;
+    padding: 40px;
+    font-size: 40px;
+}
+
+
+.right h3{
+    padding: 50px;
+    color: #1c5838;
+    line-height: 2;
+}
+
+/* form */
+
+
+.form{
+    width: 500px;
+    padding: 20px;
+    margin: 0;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+
+form .btn{
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #1c5838;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 755px) {
+    .contact-content{flex-direction: column;}
+    .form{overflow: hidden;}
+    .form{width: 400px;;}
+    .contact h2{padding-top: 60px;}
+}
+
+@media only screen and (max-width: 400px) {
+    .form{width: 350px;}
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THANK YOU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.thankyou{
+    padding-top: 100px;
+    background-image: url("images/contact-thankyou/allison-saeng-eZ8fkqYTWIM-unsplash.jpg");
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+.thankyou h2{
+    color: #1c5838;
+    text-align: center;
+    padding: 10px;
+    line-height: 2;  
+}
+
+
+
+/* FOOTER */
+
+footer{
+    margin: 40px;
+}
+
+footer h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #1c5838;
+}
+

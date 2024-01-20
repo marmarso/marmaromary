@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Marmar Omary - Thank You</title>
+    </head>
+
+    <body>
+<!----------------------------NAV-------------------------------->
+        <nav class="navbar">
+            <div class="navbar-links">
+            <ul>
+                <li><a href="webdesign.html">Web</li></a>
+                <li><a href="graphicdesign.html">Graphic</li></a>
+                <li><a href="index.html">Marmar Omary</li></a>
+                <li><a href="resume.html">Resume</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+<!------------------------HEADER-------------------------------->
+
+
+<!------------------------MAIN---------------------------------->
+
+        <section class="thankyou">
+            <h2>Thank you!</h2>
+            <h2>Keep an eye on your email! </br>You will hear back soon!</h2>
+        </section>
+
+<!--------------------JAVASCRIPT---------------------------->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarLinks.classList.toggle("active");
+            })
+
+        </script>
+
+    </body>
+</html>
