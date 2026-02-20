@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Marmar Omary - Art</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+<!----------------------------NAV-------------------------------->
+        <nav class="navbar">
+            <div class="navbar-links">
+            <ul>
+                <li><a href="webdesign.html">Web</li></a>
+                <li><a href="graphicdesign.html">Graphic</li></a>
+                <li><a href="index.html">Marmar Omary</li></a>
+                <li><a href="art.html">Art</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+<!------------------------MAIN---------------------------------->
+        <section class="art-main">
+            <img src="images/art/starrynight.png" alt="starry night painting in oil pastel, with 'coming soon' written over it in white surrounded by multiple oil pastels">
+        </section>
+
+<!---------------------FOOTER------------------------------->
+        <footer>
+            <h2>reach me at: marmaromary@gmail.com</h2>
+        </footer>
+        
+<!--------------------JAVASCRIPT---------------------------->
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarLinks.classList.toggle("active");
+            })
+
+        </script>
+
+    </body>
+</html>
